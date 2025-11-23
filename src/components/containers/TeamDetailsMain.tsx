@@ -71,151 +71,38 @@ const TeamDetailsMain = () => {
   }, []);
 
   return (
-    <section className="section pb-0 team-det fade-wrapper">
+    <section className="section pb-5 team-det fade-wrapper">
       <div className="container">
-        <div className="row gaper">
-          <div className="col-12 col-lg-5 col-xxl-4">
-            <div className="team-det__thumb fade-top">
-              <Image src={one} alt="Image" />
-              <div className="social-alt">
-                <Link
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  aria-label="share us on facebook"
-                >
-                  <i className="fa-brands fa-facebook-f"></i>
-                </Link>
-                <Link
-                  href="https://www.twitter.com/"
-                  target="_blank"
-                  aria-label="share us on twitter"
-                >
-                  <i className="fa-brands fa-twitter"></i>
-                </Link>
-                <Link
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                  aria-label="share us on pinterest"
-                >
-                  <i className="fa-brands fa-linkedin-in"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-7 col-xxl-8">
-            <div className="team-det__content fade-top">
-              <div className="intro">
-                <div className="intro-left">
-                  <h4>Sana p. Lesh</h4>
-                  <p>Senior engineer</p>
-                </div>
-                <div className="intro-right">
-                  <Link href="contact-us" className="btn btn--primary">
-                    Hire Me
-                    <i className="fa-sharp fa-solid fa-paper-plane"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="content">
-                <h5>About Me</h5>
-                <p>
-                  Proin ultricies ultricies est vitae cursus. Nulla sit amet
-                  suscipit tortor. Maecenas dui erat, ornare eget tristique
-                  vitae, rutrum pretium justo. Phasellus vitae consequat nisi,
-                  quis luctus nisl. Praesent faucibus sem id massa semper
-                  ornare. Nam eu magna at mi pellentesque mattis. Morbi at
-                  condimentum velit. Phasellus aliquet, leo auctor volutpat
-                  ultrices, metus dolor dictum enim, sed convallis lacus urna
-                  nec erat.
-                </p>
-              </div>
-              <div className="skill-wrap">
-                <div className="skill-bar-single">
-                  <div className="skill-bar-title">
-                    <p>Wireframe</p>
-                  </div>
-                  <div className="skill-bar-wrapper" data-percent="75%">
-                    <div className="skill-bar">
-                      <div className="skill-bar-percent">
-                        <span className="percent-value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-bar-single">
-                  <div className="skill-bar-title">
-                    <p>Visual Design</p>
-                  </div>
-                  <div className="skill-bar-wrapper" data-percent="90%">
-                    <div className="skill-bar">
-                      <div className="skill-bar-percent">
-                        <span className="percent-value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-bar-single">
-                  <div className="skill-bar-title">
-                    <p>Wireframe</p>
-                  </div>
-                  <div className="skill-bar-wrapper" data-percent="75%">
-                    <div className="skill-bar">
-                      <div className="skill-bar-percent">
-                        <span className="percent-value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-bar-single">
-                  <div className="skill-bar-title">
-                    <p>Visual Design</p>
-                  </div>
-                  <div className="skill-bar-wrapper" data-percent="90%">
-                    <div className="skill-bar">
-                      <div className="skill-bar-percent">
-                        <span className="percent-value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="row">
           <div className="col-12">
             <div className="team-det__info fade-top">
-              <h4>Education background</h4>
+              <h4 className="fs-2">Film & Media Scores – Cinematic Soundtracks That Bring Stories to Life</h4>
               <div className="group">
-                <h5>
-                  Bachelor&apos;s degree,
-                  <span>2010</span>
+                <h5 className="fs-3">
+                  Featured Albums
+                </h5>
+                <p className="fs-4">
+                  Neon Requiem – Sci-Fi, EDM, Gaming, and Cyberpunk Soundtracks
+                </p>
+                <p>
+                  Step into a futuristic world with Neon Requiem, an album that combines cutting-edge electronic sounds, immersive gaming beats, and cyberpunk-inspired melodies. Perfect for sci-fi films, video games, and action-packed web series, Neon Requiem brings a bold energy and futuristic vibe to any project. Let the music transport your audience into a new dimension.
+                </p>
+
+              </div>
+              <div className="group">
+                <h5 className="fs-3">
+                  One Earth, One Home – World Music, Countryside, Pop, Focused on Environmental Awareness
                 </h5>
                 <p>
-                  Proin ultricies ultricies est vitae cursus. Nulla sit amet
-                  suscipit tortor. Maecenas dui erat, ornare eget tristique
-                  vitae, rutrum pretium justo. Phasellus vitae consequat nisi,
-                  quis luctus nisl. Praesent faucibus sem id massa semper
-                  ornare. Nam eu magna at mi pellentesque mattis. Morbi at
-                  condimentum velit. Phasellus aliquet, leo auctor volutpat
-                  ultrices, metus dolor dictum enim, sed convallis lacus urna
-                  nec erat.
+                  Awareness One Earth, One Home is a celebration of our planet, blending world music, countryside influences, and pop rhythms. Designed to inspire change, this album is perfect for projects centered on environmental themes, nature documentaries, and campaigns advocating for a sustainable future. The powerful melodies speak to the urgency of protecting our planet while connecting deeply with your audience’s emotions.
                 </p>
               </div>
               <div className="group">
-                <h5>
-                  Master&apos;s degree in design,
-                  <span>2015</span>
+                <h5 className="fs-3">
+                  Get in Touch – Elevate Your Project with Artint Studio’s Music
                 </h5>
                 <p>
-                  Proin ultricies ultricies est vitae cursus. Nulla sit amet
-                  suscipit tortor. Maecenas dui erat, ornare eget tristique
-                  vitae, rutrum pretium justo. Phasellus vitae consequat nisi,
-                  quis luctus nisl. Praesent faucibus sem id massa semper
-                  ornare. Nam eu magna at mi pellentesque mattis. Morbi at
-                  condimentum velit. Phasellus aliquet, leo auctor volutpat
-                  ultrices, metus dolor dictum enim, sed convallis lacus urna
-                  nec erat.
+                Looking to enhance your web series, film, or media project with unforgettable music? Artint Studio’s original compositions are available for licensing and integration into all types of media. Our music is crafted to elevate the narrative, add emotional depth, and create an unforgettable sound experience. Let’s Collaborate: Reach out today to explore how Artint Studio’s soundtracks can bring your vision to life. We’re ready to create the perfect soundtrack for your next big project.
                 </p>
               </div>
             </div>

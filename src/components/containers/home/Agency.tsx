@@ -3,8 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import thumbone from "public/images/agency/thumb-one.png";
-import thumbtwo from "public/images/agency/thumb-two.png";
 import HomeImgOne from "/public/images/HomeImgOne.jpg";
 import HomeImgTwo from "/public/images/HomeImgTwo.jpg";
 

@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import star from "public/images/testimonial/star.png";
-
 const AboutCta = () => {
   return (
     <section className="cta-s section">
@@ -16,24 +15,10 @@ const AboutCta = () => {
                 <div className="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-9">
                   <div className="section__header text-center">
                     <h2 className="title">
-                      Stay Ahead With Our Top Notch Digital Services
+                      Stream Now
                     </h2>
-                  </div>
-                  <div className="footer__single-form">
-                    <form action="#" method="post">
-                      <div className="input-email">
-                        <input
-                          type="email"
-                          name="subscribe-news"
-                          id="subscribeNews"
-                          placeholder="Enter Your Email"
-                          required
-                        />
-                        <button type="submit" className="subscribe">
-                          <i className="fa-sharp fa-solid fa-paper-plane"></i>
-                        </button>
-                      </div>
-                    </form>
+                    <h4>Stream Artint Studios’ Music on Your Favorite Platforms</h4>
+                    <p>Discover our latest tracks and albums – now available on Apple Music, Spotify, Amazon Music, YouTube, iHeartRadio, Boomplay, Deezer , and Tidal. Tune in and experience music that moves you, wherever you are.</p>
                   </div>
                 </div>
               </div>

@@ -36,7 +36,7 @@ const Info = () => {
 
       <div className="container mt-5">
         <div className="row gaper align-items-start">
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6">  
             <div className="four-info__content text-center">
               <h2 className="title-anim">
                 Experimental

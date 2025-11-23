@@ -37,6 +37,12 @@ const Layout = ({
   video,
 }: LayoutProps) => {
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+        gsap.registerPlugin(ScrollTrigger);
+    }
+  }, []);
+
   // tilt effect
   useEffect(() => {
     const tiltElements = document.querySelectorAll(".topy-tilt");

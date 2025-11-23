@@ -4,6 +4,7 @@ import HomeOneBanner from "@/components/layout/banner/HomeOneBanner";
 import Agency from "@/components/containers/home/Agency";
 import PortfolioText from "@/components/containers/home/PortfolioText";
 import HomeTestimonial from "@/components/containers/home/HomeTestimonial";
+import AboutCta from "@/components/containers/home-two/AboutCta";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeOneBanner />
       <Agency />
       <PortfolioText />
+      <AboutCta />
       <HomeTestimonial />
     </Layout>
   );

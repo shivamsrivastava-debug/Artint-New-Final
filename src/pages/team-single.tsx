@@ -7,12 +7,7 @@ import CtaTwo from "@/components/containers/service-details/CtaTwo";
 const TeamDetails = () => {
   return (
     <Layout header={2} footer={5} video={0}>
-      <CmnBanner
-        title="SANA P. LESH"
-        navigation="Team Details"
-        parent="Our Teams"
-        parentLink="our-teams"
-      />
+      <CmnBanner/>
       <TeamDetailsMain />
       <CtaTwo />
     </Layout>

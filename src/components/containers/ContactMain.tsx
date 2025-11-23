@@ -1,151 +1,134 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import phone from "public/images/phone.png";
-import mail from "public/images/mail.png";
-import location from "public/images/location.png";
-import time from "public/images/time.png";
+// Link को इस्तेमाल नहीं किया जा रहा है इस फॉर्म के लिए, लेकिन रखा गया है यदि जरूरत पड़े
+import Link from "next/link"; 
+// पुराने आइकनों की अब आवश्यकता नहीं है इस फॉर्म के लिए, इसलिए इन्हें कमेंट कर दिया गया है
+// import phone from "public/images/phone.png";
+// import mail from "public/images/mail.png";
+// import location from "public/images/location.png";
+// import time from "public/images/time.png";
+import star from "public/images/star.png"; // मान लिया कि आपके पास यह star इमेज है
 
 const ContactMain = () => {
   return (
-    <section className="section contact-m fade-wrapper">
+    <section className="section contact-m fade-wrapper py-5 py-md-5 py-lg-7"> {/* Bootstrap padding classes */}
       <div className="container">
-        <div className="row gaper">
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div className="contact-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Image src={phone} alt="Image" />
-              </div>
-              <div className="content">
-                <h4>Phone & Fax</h4>
-                <p>
-                  <Link href="tel:197-90-56-780">Mobile : +197-90-56-780</Link>
-                </p>
-                <p>
-                  <Link href="tel:197-90-56-780">Fax : +44-208-1234567</Link>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div className="contact-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Image src={mail} alt="Image" />
-              </div>
-              <div className="content">
-                <h4>Mail Address</h4>
-                <p>
-                  <Link href="mailto:info.company@gmail.com">
-                    Info.company@gmail.com
-                  </Link>
-                </p>
-                <p>
-                  <Link href="mailto:info.company@gmail.com">
-                    Info.company@yahoo.com
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div className="contact-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Image src={location} alt="Image" />
-              </div>
-              <div className="content">
-                <h4>Our Location</h4>
-                <p>
-                  <Link
-                    href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
-                    target="_blank"
-                  >
-                    85 Ketch Harbour RoadBensalem, PA 19020
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div className="contact-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Image src={time} alt="Image" />
-              </div>
-              <div className="content">
-                <h4>Office Hour</h4>
-                <p>Sun - Thu 09 am - 06pm</p>
-                <p>Fri - Sat 4 pm - 10pm</p>
-              </div>
+        {/* शीर्ष शीर्षक और विवरण - Bootstrap classes का उपयोग */}
+        <div className="row justify-content-center text-center mb-5"> {/* mb-5 मार्जिन-बॉटम के लिए */}
+          <div className="col-12 col-md-10 col-lg-9 col-xl-8"> {/* Responsive column width */}
+            <div className="section__header">
+              <h2 className="display-4 fw-bold mb-3">Start Early Partnerships</h2> {/* display-4, fw-bold, mb-3 Bootstrap heading classes */}
+              <p className="lead text-secondary"> {/* lead और text-secondary Bootstrap text classes */}
+                Invite film studios to collaborate on groundbreaking projects.
+                Get involved in the creative process from day one and shape the
+                future of audio-visual storytelling.
+              </p>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="map-wrapper">
-              <div className="row gaper">
-                <div className="col-12 col-lg-6">
-                  <div className="contact__map fade-top">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20342.411046372905!2d-74.16638039276373!3d40.719832743885284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1649562691355!5m2!1sen!2sbd"
-                      width="100"
-                      height="800"
-                      style={{ border: "0px" }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
+
+        {/* पुराने कॉन्टैक्ट इन्फो सेक्शन को हटा दिया गया है क्योंकि वह इमेज में नहीं है */}
+        {/* <div className="row gaper"> ... </div> */}
+
+        {/* मुख्य फॉर्म रैपर - Bootstrap classes का उपयोग */}
+        <div className="row justify-content-center">
+          <div className="col-12 col-lg-10 col-xl-8"> {/* फॉर्म को सेंटर में रखने और उसकी चौड़ाई नियंत्रित करने के लिए */}
+            <div className="p-4 p-md-5 rounded-4 shadow-lg" style={{ backgroundColor: '#1A1A2E' }}> {/* p-4/p-md-5 पैडिंग, rounded-4 गोल कोनों, shadow-lg शैडो, कस्टम बैकग्राउंड कलर */}
+              <form action="#" method="post" className="contact-form">
+                <div className="row g-4"> {/* g-4 सभी कॉलम और रो के बीच गैप के लिए */}
+                  {/* Studio Name */}
+                  <div className="col-12 col-sm-6">
+                    <div className="mb-3"> {/* mb-3 मार्जिन-बॉटम के लिए */}
+                      <label htmlFor="studioName" className="form-label text-light">Studio Name *</label> {/* text-light लेबल के रंग के लिए */}
+                      <input
+                        type="text"
+                        name="studio-name"
+                        id="studioName"
+                        className="form-control bg-dark border-secondary text-light" // Bootstrap form-control, dark bg, secondary border, light text
+                        placeholder="Your studio name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  {/* Contact Name */}
+                  <div className="col-12 col-sm-6">
+                    <div className="mb-3">
+                      <label htmlFor="contactName" className="form-label text-light">Contact Name *</label>
+                      <input
+                        type="text"
+                        name="contact-name"
+                        id="contactName"
+                        className="form-control bg-dark border-secondary text-light"
+                        placeholder="Your full name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  {/* Email Address */}
+                  <div className="col-12 col-sm-6">
+                    <div className="mb-3">
+                      <label htmlFor="emailAddress" className="form-label text-light">Email Address *</label>
+                      <input
+                        type="email"
+                        name="email-address"
+                        id="emailAddress"
+                        className="form-control bg-dark border-secondary text-light"
+                        placeholder="your@email.com"
+                        required
+                      />
+                    </div>
+                  </div>
+                  {/* Phone Number */}
+                  <div className="col-12 col-sm-6">
+                    <div className="mb-3">
+                      <label htmlFor="phoneNumber" className="form-label text-light">Phone Number</label>
+                      <input
+                        type="tel"
+                        name="phone-number"
+                        id="phoneNumber"
+                        className="form-control bg-dark border-secondary text-light"
+                        placeholder="+1 (555) 123-4567"
+                      />
+                    </div>
+                  </div>
+                  {/* Project Type of Interest */}
+                  <div className="col-12">
+                    <div className="mb-3">
+                      <label htmlFor="projectType" className="form-label text-light">Project Type of Interest</label>
+                      <select id="projectType" className="form-select bg-dark border-secondary text-light"> {/* Bootstrap form-select */}
+                        <option value="" disabled selected>Select a project type</option> {/* Placeholder option */}
+                        <option value="film" className="text-light">Film Production</option>
+                        <option value="tv" className="text-light">TV Series</option>
+                        <option value="animation" className="text-light">Animation Project</option>
+                        <option value="docs" className="text-light">Documentary</option>
+                        <option value="other" className="text-light">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  {/* Message */}
+                  <div className="col-12">
+                    <div className="mb-3">
+                      <label htmlFor="message" className="form-label text-light">Message *</label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        rows={5}
+                        className="form-control bg-dark border-secondary text-light"
+                        placeholder="Tell us about your studio, your vision, and how you'd like to collaborate on our upcoming projects..."
+                        required
+                      ></textarea>
+                    </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-6">
-                  <div className="contact-main__form  fade-top">
-                    <h3>Leave A Message</h3>
-                    <form
-                      action="#"
-                      method="post"
-                      className="section__content-cta"
-                    >
-                      <div className="group-wrapper">
-                        <div className="group-input ">
-                          <input
-                            type="text"
-                            name="contact-name"
-                            id="contactName"
-                            placeholder="Name"
-                          />
-                        </div>
-                        <div className="group-input ">
-                          <input
-                            type="email"
-                            name="contact-email"
-                            id="contactEmail"
-                            placeholder="Email"
-                          />
-                        </div>
-                      </div>
-                      <div className="group-input drt">
-                        <select className="subject">
-                          <option data-display="Subject">Subject</option>
-                          <option value="1">Account</option>
-                          <option value="2">Service</option>
-                          <option value="3">Pricing</option>
-                          <option value="4">Support</option>
-                        </select>
-                      </div>
-                      <div className="group-input ">
-                        <textarea
-                          name="contact-message"
-                          id="contactMessage"
-                          placeholder="Message"
-                        ></textarea>
-                      </div>
-                      <div className="form-cta justify-content-start">
-                        <button type="submit" className="btn btn--primary">
-                          Send Message
-                        </button>
-                      </div>
-                    </form>
-                  </div>
+
+                {/* सबमिट बटन - Bootstrap classes का उपयोग */}
+                <div className="d-grid mt-4"> {/* d-grid बटन को फुल-विड्थ बनाने के लिए */}
+                  <button type="submit" className="btn btn-lg d-flex align-items-center justify-content-center" style={{ background: 'linear-gradient(90deg, #8A2BE2, #FF69B4)', color: 'white', border: 'none' }}> {/* कस्टम ग्रेडिएंट, btn-lg, d-flex */}
+                    <Image src={star} alt="Star" width={20} height={20} className="me-2" /> {/* me-2 मार्जिन-एंड के लिए */}
+                    Start Partnership Discussion
+                  </button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
