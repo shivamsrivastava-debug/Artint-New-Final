@@ -2,11 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about-us": "pages/about-us.js",
-  "/portfolio": "pages/portfolio.js",
-  "/contact-us": "pages/contact-us.js",
-  "/": "pages/index.js",
-  "/our-story": "pages/our-story.js",
   "/client-feedback": "pages/client-feedback.js",
-  "/our-services": "pages/our-services.js"
+  "/contact-us": "pages/contact-us.js",
+  "/about-us": "pages/about-us.js",
+  "/": "pages/index.js",
+  "/portfolio": "pages/portfolio.js"
 }

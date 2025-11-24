@@ -42,16 +42,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/contact-us.js"
     ],
-    "/our-services": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/our-services.js"
-    ],
-    "/our-story": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/our-story.js"
-    ],
     "/portfolio": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

@@ -14,7 +14,7 @@ import HomeImgNine from "/public/images/HomeImgNine.jpg";
 
 const PortfolioMain = () => {
   return (
-    <section className="section portfolio-m fade-wrapper">
+    <section className="section portfolio-m fade-wrapper mt-5">
       
       <div className="container">
         <h3 className="pl-5 mb-3">Top Singles</h3>

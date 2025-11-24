@@ -5,7 +5,7 @@ const VideoModal = () => {
 
   return (
     <div className={"vid-m" + (vid ? " vid-a" : " ")}>
-      <div className="vid-c">
+      {/* <div className="vid-c">
         <button
           aria-label="close video popup"
           className="close-v"
@@ -17,7 +17,7 @@ const VideoModal = () => {
           <source src="/images/popup-video.mp4" type="video/mp4" />
         </video>
         <h5>Hello</h5>
-      </div>
+      </div> */}
     </div>
   );
 };

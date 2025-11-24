@@ -11,7 +11,6 @@ const Footer = () => {
       style={{ backgroundImage: "url('/images/footer/footer-bg.png')" }}
     >
       <div className="container">
-        
         <div className="row gaper">
           <div className="col-12">
             <div className="footer__single">
@@ -21,8 +20,8 @@ const Footer = () => {
               <div className="footer__single-meta">
                 <Link
                   href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
-                  target="_blank">
-                </Link>
+                  target="_blank"
+                ></Link>
               </div>
             </div>
           </div>
@@ -35,24 +34,22 @@ const Footer = () => {
               <div className="footer__single-content">
                 <ul>
                   <li>
-                    <Link href="about-us">About Us</Link>
+                    <Link href="about-us">More Than To Night</Link>
                   </li>
                   <li>
-                    <Link href="client-feedback">Award Winning</Link>
+                    <Link href="client-feedback">Can't Let You Go</Link>
                   </li>
                   <li>
-                    <Link href="blog">News & Blog</Link>
+                    <Link href="blog">Homecomming You It</Link>
                   </li>
                   <li>
-                    <Link href="contact-us">careers</Link>
+                    <Link href="contact-us">One Earth One Home</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-
-          
           <div className="col-12 col-lg-2 col-xl-2">
             <div className="footer__single">
               <div className="footer__single-intro">
@@ -61,22 +58,27 @@ const Footer = () => {
               <div className="footer__single-content">
                 <ul>
                   <li>
-                    <Link href="about-us">About Us</Link>
+                    <Link href="/">The Experience</Link>
                   </li>
                   <li>
-                    <Link href="client-feedback">Award Winning</Link>
+                    <Link href="portfolio">The Collection</Link>
                   </li>
                   <li>
-                    <Link href="blog">News & Blog</Link>
+                    <Link href="contact-us">Commision Art</Link>
                   </li>
                   <li>
-                    <Link href="contact-us">careers</Link>
+                    <Link href="client-feedback">Visual Realms</Link>
+                  </li>
+                  <li>
+                    <Link href="about-us">The Vision</Link>
+                  </li>
+                  <li>
+                    <Link href="">The Future</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-
 
           <div className="col-12 col-lg-2 col-xl-2">
             <div className="footer__single">
@@ -86,23 +88,28 @@ const Footer = () => {
               <div className="footer__single-content">
                 <ul>
                   <li>
-                    <Link href="about-us">About Us</Link>
+                    <Link href="about-us">Spotify</Link>
                   </li>
                   <li>
-                    <Link href="client-feedback">Award Winning</Link>
+                    <Link href="client-feedback">Apple Music</Link>
                   </li>
                   <li>
-                    <Link href="blog">News & Blog</Link>
+                    <Link href="blog">Youtube</Link>
                   </li>
                   <li>
-                    <Link href="contact-us">careers</Link>
+                    <Link href="contact-us">Instagram</Link>
+                  </li>
+                  <li>
+                    <Link href="contact-us">TikTok</Link>
+                  </li>
+                  <li>
+                    <Link href="contact-us">LinkedIn</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          
           <div className="col-12 col-lg-2 col-xl-2">
             <div className="footer__single">
               <div className="footer__single-intro">
@@ -111,16 +118,16 @@ const Footer = () => {
               <div className="footer__single-content">
                 <ul>
                   <li>
-                    <Link href="about-us">About Us</Link>
+                    <Link href="about-us">Licencing Terms</Link>
                   </li>
                   <li>
-                    <Link href="client-feedback">Award Winning</Link>
+                    <Link href="client-feedback">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link href="blog">News & Blog</Link>
+                    <Link href="blog">Business Collaborations</Link>
                   </li>
                   <li>
-                    <Link href="contact-us">careers</Link>
+                    <Link href="contact-us">Media Kit Download</Link>
                   </li>
                 </ul>
               </div>
@@ -134,8 +141,7 @@ const Footer = () => {
               </div>
               <div className="footer__single-content">
                 <p>
-                  Welcome to our digital agency We specialize in helping
-                  business most like yours succeed online.
+                  If you have a vision, we can bring it to life. Let’s talk.
                 </p>
                 <div className="footer__single-form">
                   <form action="#" method="post">
@@ -156,15 +162,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
         </div>
-
 
         <div className="row">
           <div className="col-12">
             <div className="footer__copyright">
               <div className="row align-items-center gaper">
-                
                 {/* <div className="col-12 col-lg-8">
                   <div className="footer__copyright-text text-center">
                     <p>
@@ -202,7 +205,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   );

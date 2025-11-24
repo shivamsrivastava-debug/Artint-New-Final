@@ -6,7 +6,7 @@ import ContactMain from "@/components/containers/ContactMain";
 const ContactUs = () => {
   return (
     <Layout header={2} footer={5} video={0}>
-      <CmnBanner/>
+      <CmnBanner title={"Get In Touch"} />
       <ContactMain />
     </Layout>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 
-const CmnBanner = () => {
+const CmnBanner = ({title}:{title:string}) => {
   return (
     <>
       <section
@@ -13,10 +13,9 @@ const CmnBanner = () => {
           <div className="row gaper align-items-center d-flex flex-column justify-content-between align-items-center ">
             <div className="col-12 col-lg-5 col-xl-7">
               <div className="text-center">
-                <h2 className="title title-anim">Vision Artint Studio</h2>             
+                <h2 className="title title-anim">{title}</h2>             
               </div>
             </div>
-            
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ import Info from "@/components/containers/home-four/Info";
 const AboutUs = () => {
   return (
     <Layout header={2} footer={5} video={0}>
-      <CmnBanner/>
+      <CmnBanner title={"Vision Artint Studio"}/>
       <Info />
       <TeamMembers />
       <AboutCta />

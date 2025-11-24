@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import logo from "public/images/logo.png";
 import logoLight from "public/images/logo-light.png";
 import Offcanvas from "./Offcanvas";
+import Artintlogo from "public/images/newlogo.png";
 
 interface HeaderProps {
   openNav: boolean;
@@ -55,118 +56,52 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                 <nav className="navbar p-0">
                   <div className="navbar__logo">
                     <Link href="/" aria-label="go to home">
-                      <Image src={logoSrc} priority alt="Image" />
+                      <Image
+                        src={Artintlogo}
+                        alt="Image"
+                        className="w-25 py-4"
+                      />
                     </Link>
                   </div>
                   <div className="navbar__menu">
                     <ul>
                       <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Experience
+                        <button>
+                          <Link href="/">Experience</Link>
                         </button>
-                        <ul className="navbar__sub-menu navbar__sub-menu--lg">
-                          <li>
-                            <Link href="/">Creative Agency</Link>
-                          </li>
-                       
-                          <li>
-                            <Link href="index-two">Digital Agency</Link>
-                          </li>
-                          
-                          <li>
-                            <Link href="index-three">It Solution</Link>
-                          </li>
-                         
-                          <li>
-                            <Link href="index-four">Personal Portfolio</Link>
-                          </li>
-                         
-                          <li>
-                            <Link href="index-five">Interactive Portfolio</Link>
-                          </li>
-                          
-                        </ul>
                       </li>
+
                       <li className="navbar__item nav-fade">
-                        <Link href="about-us">Vision</Link>
+                        <Link href="about-us">VISION</Link>
                       </li>
+
                       <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Collection
+                        <button>
+                          <Link href="portfolio">Collection</Link>
                         </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="our-services">Our Services</Link>
-                          </li>
-                        </ul>
                       </li>
+
                       <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Visual-Realms
+                        <button>
+                          <Link href="client-feedback">Visual Realms</Link>
                         </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="project-single">Project Details</Link>
-                          </li>
-                        </ul>
                       </li>
+
                       <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Commision-Art
+                        <button>
+                          <Link href="contact-us">Commision-Art</Link>
                         </button>
-                        <ul className="navbar__sub-menu">
-                         
-                         
-                          <li>
-                            <Link href="our-story">Our Story</Link>
-                          </li>
-                          <li>
-                            <Link href="portfolio">Portfolio</Link>
-                          </li>
-                          <li className="navbar__item navbar__item--has-children">
-                            <button
-                              aria-label="dropdown menu"
-                              className="navbar__dropdown-label navbar__dropdown-label-sub"
-                            >
-                              Team
-                            </button>
-                            <ul className="navbar__sub-menu navbar__sub-menu__nested">
-                              <li>
-                                <Link href="our-teams">Our Teams</Link>
-                              </li>
-                              <li>
-                                <Link href="team-single">Team Details</Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <Link href="client-feedback">Testimonials</Link>
-                          </li>
-                          <li>
-                            <Link href="contact-us">Contact Us</Link>
-                          </li>
-                        </ul>
+                      </li>
+
+                      <li className="navbar__item navbar__item--has-children nav-fade">
+                        <button>
+                          <Link href="">Future</Link>
+                        </button>
                       </li>
                     </ul>
                   </div>
+
                   <div className="navbar__options">
-                    <div className="navbar__mobile-options d-none d-sm-flex">
-                      <Link href="contact-us" className="btn btn--secondary">
-                        Let&apos;s Talk
-                      </Link>
-                    </div>
                     <button
                       className="open-mobile-menu d-flex d-xl-none"
                       aria-label="toggle mobile menu"
