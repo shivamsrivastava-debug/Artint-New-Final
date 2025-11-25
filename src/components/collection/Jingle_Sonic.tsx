@@ -15,77 +15,42 @@ const jinglesData: Jingle[] = [
   {
     title: "Morning Buzz",
     description: "A cheerful jingle to wake up your senses.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgOne.jpg",
   },
   {
     title: "Future Stack",
     description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgTwo.jpg",
   },
   {
     title: "Future Stack",
     description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgNine.jpg",
   },
   {
     title: "Future Stack",
     description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgFive.jpg",
   },
   {
     title: "Future Stack",
     description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgNine.jpg",
   },
   {
     title: "Future Stack",
     description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgOne.jpg",
   },
   {
     title: "Future Stack",
     description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgTwo.jpg",
   },
-  {
+ {
     title: "Future Stack",
     description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
-  },
-  {
-    title: "Future Stack",
-    description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
-  },
-  {
-    title: "Future Stack",
-    description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
-  },
-  {
-    title: "Future Stack",
-    description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
-  },
-  {
-    title: "Future Stack",
-    description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
-  },
-  {
-    title: "Future Stack",
-    description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
-  },
-  {
-    title: "Future Stack",
-    description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
-  },
-  {
-    title: "Future Stack",
-    description: "A futuristic sonic logo for innovation.",
-    imageSrc: "/mnt/data/40af5da4-7e0f-4ed5-8969-38359aba770d.png",
+    imageSrc: "/images/HomeImgFour.jpg",
   },
 ];
 
@@ -109,10 +74,9 @@ const JingleSonic: React.FC = () => {
   return (
     <div
       ref={ref}
-      className="container py-5 mb-5"
-      style={{ backgroundColor: "#1E1E2A", color: "#E0E0E0" }}
+      className="mb-5 d-flex justify-content-center align-items-center"
     >
-      <div className="row g-4">
+      <div className="row g-4 border rounded border-dark py-5" style={{ width:"73%", backgroundColor: "#1E1E2A", color: "#E0E0E0"}}>
         {jinglesData.map((jingle, index) => (
           <motion.div
             key={jingle.title}
@@ -123,14 +87,13 @@ const JingleSonic: React.FC = () => {
             variants={cardVariants}
           >
             <div
-              className="card position-relative overflow-hidden card-custom-hover"
+              className="card position-relative overflow-hidden card-custom-hover blur-box"
               style={{
                 borderRadius: "12px",
                 backgroundColor: "#292934",
                 cursor: "pointer",
               }}
             >
-              {/* Image ऊपर */}
               <div
                 className="position-relative w-100"
                 style={{ height: "140px" }}
@@ -139,11 +102,12 @@ const JingleSonic: React.FC = () => {
                   src={jingle.imageSrc}
                   alt={jingle.title}
                   fill
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover", objectPosition:"top"}}
+                  className="fluid"
                 />
               </div>
 
-              {/* Play Icon Overlay */}
+
               <div className="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center overlay-hover">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +121,7 @@ const JingleSonic: React.FC = () => {
                 </svg>
               </div>
 
-              {/* Card Body नीचे */}
+
               <div
                 className="card-body text-center p-3"
                 style={{ backgroundColor: "#21212e" }}
@@ -174,7 +138,7 @@ const JingleSonic: React.FC = () => {
         ))}
       </div>
 
-      {/* Custom CSS */}
+
       <style jsx>{`
         .card-custom-hover {
           border-width: 1px;

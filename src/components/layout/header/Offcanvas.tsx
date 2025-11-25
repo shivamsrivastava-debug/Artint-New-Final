@@ -94,25 +94,25 @@ const Offcanvas = ({ openNav, setOpenNav }: HeaderProps) => {
 
                 <li className="navbar__item navbar__item--has-children nav-fade">
                   <button>
-                    <Link href="about-us">Vision</Link>
+                    <Link href="vision">Vision</Link>
                   </button>
                 </li>
 
                 <li className="navbar__item navbar__item--has-children nav-fade">
                   <button>
-                    <Link href="portfolio">Collection</Link>
+                    <Link href="collection">Collection</Link>
                   </button>
                 </li>
 
                 <li className="navbar__item navbar__item--has-children nav-fade">
                   <button>
-                    <Link href="client-feedback">Visual realms</Link>
+                    <Link href="visual-realms">Visual realms</Link>
                   </button>
                 </li>
 
                 <li className="navbar__item navbar__item--has-children nav-fade">
                   <button>
-                    <Link href="contact-us">Commision-Art</Link>
+                    <Link href="commision-art">Commision-Art</Link>
                   </button>
                 </li>
               </ul>

@@ -36,11 +36,8 @@ const AlbumCard: React.FC<CardProps> = ({
   }, [controls, inView]);
 
   return (
-    <>
-      <div
-        className="d-flex justify-content-center"
-        style={{ padding: "40px 0" }}
-      >
+    <section>
+      <div className="d-flex justify-content-center align-items-center"  style= {{ padding: "40px 0" }}>
         <motion.div
           ref={ref}
           className="card shadow"
@@ -48,7 +45,7 @@ const AlbumCard: React.FC<CardProps> = ({
           animate={controls}
           variants={cardVariants}
           style={{
-            width: "80%",
+            width: "73%",
             borderRadius: "14px",
             overflow: "hidden",
             backgroundColor: "rgba(5, 5, 30, 0.6)",
@@ -97,7 +94,7 @@ const AlbumCard: React.FC<CardProps> = ({
           </div>
         </motion.div>
       </div>
-    </>
+    </section>
   );
 };
 

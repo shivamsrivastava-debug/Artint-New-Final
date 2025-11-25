@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/commision-art": "pages/commision-art.js",
-  "/collection": "pages/collection.js",
+  "/vision": "pages/vision.js",
+  "/": "pages/index.js",
   "/404": "pages/404.js",
-  "/visual-realms": "pages/visual-realms.js",
-  "/vision": "pages/vision.js"
+  "/visual-realms": "pages/visual-realms.js"
 }

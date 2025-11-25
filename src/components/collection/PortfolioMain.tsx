@@ -10,21 +10,22 @@ import HomeImgSix from "/public/images/HomeImgSix.jpg";
 import HomeImgSeven from "/public/images/HomeImgSeven.jpg";
 import HomeImgNine from "/public/images/HomeImgNine.jpg";
 
-
-
 const PortfolioMain = () => {
   return (
-    <section className="section portfolio-m fade-wrapper mt-5">
-      
+    <section className="section portfolio-m fade-wrapper mt-5 container">
       <div className="container">
         <h3 className="pl-5 mb-3">Top Singles</h3>
 
         <div className="row gaper">
           <div className="col-12 col-lg-6 col-xxl-3">
             <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
+              <div className="thumb ">
                 <Link href="service-single">
-                  <Image src={HomeImgOne} alt="Image" />
+                  <Image
+                    src={HomeImgOne}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -34,7 +35,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgTwo} alt="Image" />
+                  <Image
+                    src={HomeImgThree}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -44,7 +49,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgThree} alt="Image" />
+                  <Image
+                    src={HomeImgTwo}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -54,7 +63,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgFour} alt="Image" />
+                  <Image
+                    src={HomeImgFive}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -64,7 +77,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgFive} alt="Image" />
+                  <Image
+                    src={HomeImgSix}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -74,7 +91,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgSix} alt="Image" />
+                  <Image
+                    src={HomeImgFour}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -84,7 +105,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgSeven} alt="Image" />
+                  <Image
+                    src={HomeImgSeven}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -94,7 +119,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgFour} alt="Image" />
+                  <Image
+                    src={HomeImgSix}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -104,7 +133,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgNine} alt="Image" />
+                  <Image
+                    src={HomeImgThree}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -114,7 +147,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgOne} alt="Image" />
+                  <Image
+                    src={HomeImgNine}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -124,7 +161,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgTwo} alt="Image" />
+                  <Image
+                    src={HomeImgFour}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>
@@ -134,37 +175,11 @@ const PortfolioMain = () => {
             <div className="portfolio-m__single topy-tilt fade-top">
               <div className="thumb">
                 <Link href="service-single">
-                  <Image src={HomeImgThree} alt="Image" />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image src={HomeImgFour} alt="Image" />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image src={HomeImgSix} alt="Image" />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image src={HomeImgFive} alt="Image" />
+                  <Image
+                    src={HomeImgOne}
+                    alt="Image"
+                    className="border rounded"
+                  />
                 </Link>
               </div>
             </div>

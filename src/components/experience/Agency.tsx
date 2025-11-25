@@ -6,8 +6,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import HomeImgOne from "/public/images/HomeImgOne.jpg";
 import HomeImgTwo from "/public/images/HomeImgTwo.jpg";
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 const Agency = () => {
   useEffect(() => {
@@ -81,35 +79,31 @@ const Agency = () => {
               <Image
                 src={HomeImgTwo}
                 alt="Image"
-                className="thumb-one fade-left "
+                className="thumb-one fade-left border border-dark rounded"
                 priority
               />
               <Image
                 src={HomeImgOne}
                 alt="Image"
-                className="thumb-two fade-right"
+                className="thumb-two fade-right border border-dark rounded"
                 priority
               />
             </div>
           </div>
           <div className="col-12 col-lg-6">
             <div className="agency__content section__content">
-              <span className="sub-title">
-                About
-                <i className="fa-solid fa-arrow-right"></i>
-              </span>
-              <h2 className="title title-anim">
-                Crafting Audio Excellence
-              </h2>
+              <div className="section__content-cta">
+                <Link href="vision" className="btn btn--primary">
+                  About
+                </Link>
+              </div>
+              <h2 className="title title-anim">Crafting Audio Excellence</h2>
               <div className="paragraph">
                 <p>
-                 Artint Studios transforms creative visions into premium audio experiences using world-class tools and award-winning sound engineering.
+                  Artint Studios transforms creative visions into premium audio
+                  experiences using world-class tools and award-winning sound
+                  engineering.
                 </p>
-              </div>
-              <div className="section__content-cta">
-                <Link href="about-us" className="btn btn--primary">
-                  Explore
-                </Link>
               </div>
             </div>
           </div>

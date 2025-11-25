@@ -61,13 +61,13 @@ const Footer = () => {
                     <Link href="/">The Experience</Link>
                   </li>
                   <li>
-                    <Link href="portfolio">The Collection</Link>
+                    <Link href="collection">The Collection</Link>
                   </li>
                   <li>
-                    <Link href="contact-us">Commision Art</Link>
+                    <Link href="commision-art">Commision Art</Link>
                   </li>
                   <li>
-                    <Link href="client-feedback">Visual Realms</Link>
+                    <Link href="visual-realms">Visual Realms</Link>
                   </li>
                   <li>
                     <Link href="about-us">The Vision</Link>
