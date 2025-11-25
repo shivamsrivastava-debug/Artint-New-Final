@@ -13,86 +13,83 @@ const ClientFeedbackMain = () => {
   return (
     <section className="section feedback-s fade-wrapper">
       <div className="container">
-        <div className="row gaper">
-
+        <div className="row gx-1 gy-3">
           <h3>Explore Lyrical Music Video - Artint Studios VEVO</h3>
 
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
+          <div className="col-auto">
+            <div
+              className="topy-tilt fade-top"
+              style={{ width: "350px", height: "400px" }}
+            >
               <Image
                 src={HomeImgOne}
                 alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
+                className="img-fluid object-fit-cover border border-dark rounded"
               />
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
+          <div className="col-auto">
+            <div
+              className="topy-tilt fade-top"
+              style={{ width: "350px", height: "400px" }}
+            >
               <Image
                 src={HomeImgTwo}
                 alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
+                className="img-fluid object-fit-cover border border-dark rounded"
               />
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
+          <div className="col-auto">
+            <div
+              className="topy-tilt fade-top"
+              style={{ width: "350px", height: "400px" }}
+            >
               <Image
-                src={HomeImgThree}
+                src={HomeImgTwo}
                 alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
+                className="img-fluid object-fit-cover border border-dark rounded"
               />
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
+          <div className="col-auto">
+            <div
+              className="topy-tilt fade-top"
+              style={{ width: "350px", height: "400px" }}
+            >
               <Image
-                src={HomeImgFour}
+                src={HomeImgTwo}
                 alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
+                className="img-fluid object-fit-cover border border-dark rounded"
               />
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
+          <div className="col-auto">
+            <div
+              className="topy-tilt fade-top"
+              style={{ width: "350px", height: "400px" }}
+            >
               <Image
-                src={HomeImgFive}
+                src={HomeImgTwo}
                 alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
+                className="img-fluid object-fit-cover border border-dark rounded"
               />
             </div>
           </div>
 
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
+          <div className="col-auto">
+            <div
+              className="topy-tilt fade-top"
+              style={{ width: "350px", height: "400px" }}
+            >
               <Image
-                src={HomeImgSix}
+                src={HomeImgTwo}
                 alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
-              />
-            </div>
-          </div>
-
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
-              <Image
-                src={HomeImgSeven}
-                alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
-              />
-            </div>
-          </div>
-
-          <div className="col-12 col-md-6 col-xl-4">
-            <div className="topy-tilt fade-top w-100 h-100">
-              <Image
-                src={HomeImgOne}
-                alt="Image"
-                className="img-fluid w-100 h-100 object-fit-cover"
+                className="img-fluid object-fit-cover border border-dark rounded"
               />
             </div>
           </div>

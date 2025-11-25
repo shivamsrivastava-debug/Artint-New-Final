@@ -12,11 +12,10 @@ import HomeImgSeven from "public/images/HomeImgSeven.jpg";
 import HomeImgOne from "public/images/HomeImgOne.jpg";
 import HomeImgTwo from "public/images/HomeImgTwo.jpg";
 
-
 const PortfolioText = () => {
   const [hover, setHover] = useState(0);
   return (
-    <section className="section portfolio pb-0 fade-wrapper position-relative">
+    <section className="section portfolio pb-0 fade-wrapper position-relative mx-5 px-5">
       
       <div className="portfolio__text-slider-w">
         <Swiper
@@ -37,71 +36,60 @@ const PortfolioText = () => {
           <SwiperSlide>
             <div className="portfolio__text-slider-single">
               <h2 className="h1 str">
-                <Link href="portfolio">
-                  Artint Studio  
-                </Link>
+                <Link href="vision">Artint Studio</Link>
               </h2>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="portfolio__text-slider-single">
               <h2 className="h1">
-                <Link href="portfolio">
-                  Artint Studio
-                </Link>
+                <Link href="portfolio">Artint Studio</Link>
               </h2>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="portfolio__text-slider-single">
               <h2 className="h1 str">
-                <Link href="portfolio">
-                  Artint Studio
-                </Link>
+                <Link href="portfolio">Artint Studio</Link>
               </h2>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="portfolio__text-slider-single">
               <h2 className="h1">
-                <Link href="portfolio">
-                Artint Studio
-                </Link>
+                <Link href="portfolio">Artint Studio</Link>
               </h2>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="portfolio__text-slider-single">
               <h2 className="h1 str">
-                <Link href="portfolio">
-                  Artint Studio
-                </Link>
+                <Link href="portfolio">Artint Studio</Link>
               </h2>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="portfolio__text-slider-single">
               <h2 className="h1">
-                <Link href="portfolio">
-                  Artint Studio
-                </Link>
+                <Link href="portfolio">Artint Studio</Link>
               </h2>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
 
-
-
       <div className="container-fluid">
+       <h3 className="mb-1 mt-5">Latest Songs</h3>
+        <hr className="mb-5 mx-2"/>
         <div className="row gaper">
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 0 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(0)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgThree} alt="Image" />
@@ -112,10 +100,11 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 1 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(1)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgFour} alt="Image" />
@@ -126,10 +115,11 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 2 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(2)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgFive} alt="Image" />
@@ -140,10 +130,11 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 3 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(3)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgSix} alt="Image" />
@@ -154,10 +145,11 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 4 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(4)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgSeven} alt="Image" />
@@ -168,10 +160,11 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 5 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(5)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgTwo} alt="Image" />
@@ -182,10 +175,32 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 0 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(0)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgThree} alt="Image" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>    
+
+      <div className="container-fluid">
+       <h3 className="mb-1 mt-5">Latest Albums</h3>
+        <hr className="mb-5 mx-2"/>
+        <div className="row gaper">
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 0 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(0)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgThree} alt="Image" />
@@ -196,38 +211,11 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 6 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(6)}
-            >
-              <Link href="portfolio">
-                <Image src={HomeImgOne} alt="Image" />
-              </Link>
-            </div>
-          </div>
-
-              <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
-                (hover === 0 ? " portfolio__single-active" : " ")
-              }
-              onMouseEnter={() => setHover(0)}
-            >
-              <Link href="portfolio">
-                <Image src={HomeImgThree} alt="Image" />
-              </Link>
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-6 col-xl-3">
-            <div
-              className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 1 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(1)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgFour} alt="Image" />
@@ -238,10 +226,11 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 2 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(2)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgFive} alt="Image" />
@@ -252,18 +241,176 @@ const PortfolioText = () => {
           <div className="col-12 col-sm-6 col-xl-3">
             <div
               className={
-                "portfolio__single topy-tilt fade-top" +
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
                 (hover === 3 ? " portfolio__single-active" : " ")
               }
               onMouseEnter={() => setHover(3)}
+              style={{width:"350px", height:"400px"}}
             >
               <Link href="portfolio">
                 <Image src={HomeImgSix} alt="Image" />
               </Link>
             </div>
           </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 4 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(4)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgSeven} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 5 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(5)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgTwo} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 0 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(0)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgThree} alt="Image" />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div className="container-fluid">
+        <h3 className="mb-1 mt-5">Lyrics Music Videos</h3>
+        <hr className="mb-5 mx-2"/>
+        <div className="row gaper">
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 0 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(0)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgThree} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 1 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(1)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgFour} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 2 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(2)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgFive} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 3 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(3)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgSix} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 4 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(4)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgSeven} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 5 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(5)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgTwo} alt="Image" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-xl-3">
+            <div
+              className={
+                " border rounded border-dark portfolio__single topy-tilt fade-top" +
+                (hover === 0 ? " portfolio__single-active" : " ")
+              }
+              onMouseEnter={() => setHover(0)}
+              style={{width:"350px", height:"400px"}}
+            >
+              <Link href="portfolio">
+                <Image src={HomeImgThree} alt="Image" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
   );
 };

@@ -71,7 +71,7 @@ const Agency = () => {
     });
   }, []);
   return (
-    <section className="section agency">
+    <section className="section agency ">
       <div className="container">
         <div className="row gaper align-items-center">
           <div className="col-12 col-lg-6">

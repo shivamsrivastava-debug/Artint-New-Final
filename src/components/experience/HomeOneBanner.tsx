@@ -12,16 +12,6 @@ const HomeOneBanner = () => {
         className="banner position-relative w-100"
         style={{ height: "70vh", overflow: "hidden" }} 
       >
-        {/* <video
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ objectFit: "cover", zIndex: -1 }}
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src="https://artint-studios.s3-eu-central-2.ionoscloud.com/artint-studios-music-website.mp4" type="video/mp4" />
-        </video> */}
 
         {/* Content */}
         <div className="container position-relative h-100 d-flex align-items-center">

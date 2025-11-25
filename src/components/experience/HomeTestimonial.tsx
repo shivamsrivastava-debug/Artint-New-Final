@@ -17,7 +17,7 @@ const HomeTestimonial = () => {
   };
   return (
     <section className="section testimonial pt-0 position-relative">
-      <div className="container position-relative">
+      <div className="position-relative mx-5 px-5">
         <div className="row">
           <div className="col-12 col-xxl-10">
             <div className="testimonial-s__slider-w">
@@ -51,7 +51,7 @@ const HomeTestimonial = () => {
                       {/* image */}
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={HomeImgNine} alt="Image" />
+                          <Image src={HomeImgNine} alt="Image" className="border border-dark rounded" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -93,7 +93,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={HomeImgSix} alt="Image" />
+                          <Image src={HomeImgSix} alt="Image" border border-dark rounded />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -133,7 +133,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={HomeImgThree} alt="Image" />
+                          <Image src={HomeImgThree} alt="Image" border border-dark rounded />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"

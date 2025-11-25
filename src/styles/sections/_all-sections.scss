@@ -162,9 +162,6 @@
       align-items: center;
       gap: 30px;
       margin-bottom: 0px;
-      i {
-        color: var(--primary-color);
-      }
     }
 
     a {
@@ -364,19 +361,11 @@
       align-items: center;
       gap: 30px;
       margin-bottom: 0px;
-      i {
-        color: var(--primary-color);
-      }
     }
     &:nth-of-type(even) {
       h2 {
         font-family: sans-serif;
-        -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 2px var(--white);
-        i {
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke: 2px var(--primary-color);
-        }
       }
     }
   }
