@@ -27,20 +27,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/collection": [
+    "/vision": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/collection.js"
-    ],
-    "/commision-art": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/commision-art.js"
-    ],
-    "/visual-realms": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/visual-realms.js"
+      "static/chunks/pages/vision.js"
     ]
   },
   "ampFirstPages": []

@@ -3,45 +3,63 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { motion } from "framer-motion";
 
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeOneBanner = () => {
   return (
     <>
-      <section
-        className="banner position-relative w-100"
-        style={{ height: "70vh", overflow: "hidden" }} 
-      >
+<section
+  className="banner position-relative w-100"
+  style={{ height: "100vh", width: "100vw", overflow: "hidden" }}
+>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="position-absolute top-0 start-0 w-100 h-100"
+    style={{ objectFit: "cover", zIndex: -1 }}
+  >
+    <source src="/videos/musicwave.mp4" type="video/mp4" />
+  </video>
 
-        {/* Content */}
-        <div className="container position-relative h-100 d-flex align-items-center">
-          <div className="row w-100">
-            <div className="col-12">
-              <div className="banner__content text-white">
+  <div className="container position-relative h-50 d-flex justify-content-center align-items-center text-center">
+    <div className="w-100">
 
-                <motion.h1
-                  initial={{ x: -200, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.8 }}
-                  className="fw-bold fs-1 mb-0"
-                >
-                  Artint Studio
-                </motion.h1>
+      <div className="banner__content text-white">
 
-                <motion.p
-                  initial={{ x: 200, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className="fs-2 mt-2"
-                >
-                  Where Sound Meets Emotion - A Journey Through Music
-                </motion.p>
+    <motion.h1
+      initial={{ x: -200, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="fw-bold mb-0"
+      style={{
+        fontSize: "clamp(2rem, 10vw, 5rem)" 
+      }}
+    >
+      Artint Studio
+    </motion.h1>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+        <motion.p
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="fs-2"
+          style={{
+          fontSize: "clamp(2rem, 10vw, 3rem)" 
+      }}
+        >
+          Where Sound Meets Emotion - A Journey Through Music
+        </motion.p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 };
