@@ -6,15 +6,7 @@ import VanillaTilt from "vanilla-tilt";
 import { useRouter } from "next/router";
 import Header from "./header/Header";
 import HeaderTwo from "./header/HeaderTwo";
-import HeaderThree from "./header/HeaderThree";
-import HeaderFour from "./header/HeaderFour";
-import HeaderFive from "./header/HeaderFive";
 import Footer from "./footer/Footer";
-import FooterTwo from "./footer/FooterTwo";
-import FooterThree from "./footer/FooterThree";
-import FooterFour from "./footer/FooterFour";
-import FooterFive from "./footer/FooterFive";
-import VideoModal from "./VideoModal";
 import ScrollProgressBtn from "./ScrollProgressBtn";
 import CustomCursor from "./CustomCursor";
 import SplitType from "split-type";
@@ -24,17 +16,13 @@ type LayoutProps = {
   handleMouseEnterTitle?: any;
   handleMouseLeaveTitle?: any;
   header?: React.ReactNode;
-  footer?: React.ReactNode;
-  video?: React.ReactNode;
 };
 
 const Layout = ({
   children,
   header,
-  footer,
   handleMouseEnterTitle,
   handleMouseLeaveTitle,
-  video,
 }: LayoutProps) => {
 
   useEffect(() => {
@@ -151,7 +139,6 @@ const Layout = ({
 
     titleAnims.forEach((titleAnim) => {
       const charElements = titleAnim.querySelectorAll(".char");
-
       charElements.forEach((char, index) => {
         const tl2 = gsap.timeline({
           scrollTrigger: {
@@ -207,34 +194,9 @@ const Layout = ({
             setOpenNav={setOpenNav}
           />
         )}
-        {header === 3 && (
-          <HeaderThree
-            openNav={openNav}
-            handleNav={handleNav}
-            setOpenNav={setOpenNav}
-          />
-        )}
-        {header === 4 && (
-          <HeaderFour
-            openNav={openNav}
-            handleNav={handleNav}
-            setOpenNav={setOpenNav}
-          />
-        )}
-        {header === 5 && (
-          <HeaderFive
-            openNav={openNav}
-            handleNav={handleNav}
-            setOpenNav={setOpenNav}
-          />
-        )}
+         
         <main>{children}</main>
-        {footer === 1 && <Footer />}
-        {footer === 2 && <FooterTwo />}
-        {footer === 3 && <FooterThree />}
-        {footer === 4 && <FooterFour />}
-        {footer === 5 && <FooterFive />}
-        {video ? <VideoModal /> : null}
+        <Footer />
         <ScrollProgressBtn />
         <CustomCursor
           onTitleMouseEnter={handleMouseEnterTitle}

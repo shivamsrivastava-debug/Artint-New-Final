@@ -2,9 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/client-feedback": "pages/client-feedback.js",
-  "/contact-us": "pages/contact-us.js",
-  "/about-us": "pages/about-us.js",
-  "/": "pages/index.js",
-  "/portfolio": "pages/portfolio.js"
+  "/commision-art": "pages/commision-art.js",
+  "/collection": "pages/collection.js",
+  "/404": "pages/404.js",
+  "/visual-realms": "pages/visual-realms.js",
+  "/vision": "pages/vision.js"
 }

@@ -12,10 +12,10 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
+    "/404": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/404.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
@@ -27,25 +27,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/about-us": [
+    "/collection": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/about-us.js"
+      "static/chunks/pages/collection.js"
     ],
-    "/client-feedback": [
+    "/commision-art": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/client-feedback.js"
+      "static/chunks/pages/commision-art.js"
     ],
-    "/contact-us": [
+    "/visual-realms": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/contact-us.js"
-    ],
-    "/portfolio": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/portfolio.js"
+      "static/chunks/pages/visual-realms.js"
     ]
   },
   "ampFirstPages": []
