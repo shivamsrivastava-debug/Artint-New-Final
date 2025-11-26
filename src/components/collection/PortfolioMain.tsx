@@ -11,179 +11,39 @@ import HomeImgSeven from "/public/images/HomeImgSeven.jpg";
 import HomeImgNine from "/public/images/HomeImgNine.jpg";
 
 const PortfolioMain = () => {
+  // Images को एक array में रखें
+  const images = [
+    HomeImgOne,
+    HomeImgThree,
+    HomeImgTwo,
+    HomeImgFive,
+    HomeImgSix,
+    HomeImgFour,
+    HomeImgSeven,
+    HomeImgSix,
+    HomeImgThree,
+    HomeImgNine,
+    HomeImgFour,
+    HomeImgOne,
+  ];
+
   return (
-    <section className="section portfolio-m fade-wrapper mt-5 container">
-      <div className="container">
+    <section className="section portfolio-m fade-wrapper" style={{marginTop:"150px", backgroundColor:"#37353E"}} >
+      <div className="px-5">
         <h3 className="pl-5 mb-3">Top Singles</h3>
 
         <div className="row gaper">
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb ">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgOne}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
+          {images.map((img, index) => (
+            <div key={index} className="col-12 col-lg-6 col-xxl-3">
+              <div className="portfolio-m__single topy-tilt fade-top">
+                <div className="thumb">
+                  <Link href="service-single">
+                    <Image src={img} alt="Image" className="border rounded" style={{width:"450px", height:"500px"}}/>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgThree}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgTwo}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgFive}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgSix}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgFour}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgSeven}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgSix}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgThree}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgNine}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgFour}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-6 col-xxl-3">
-            <div className="portfolio-m__single topy-tilt fade-top">
-              <div className="thumb">
-                <Link href="service-single">
-                  <Image
-                    src={HomeImgOne}
-                    alt="Image"
-                    className="border rounded"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="row">

@@ -11,6 +11,7 @@ import ScrollProgressBtn from "./ScrollProgressBtn";
 import CustomCursor from "./CustomCursor";
 import SplitType from "split-type";
 
+
 type LayoutProps = {
   children: React.ReactNode;
   handleMouseEnterTitle?: any;

@@ -7,11 +7,11 @@ const Info = () => {
       <div className="container">
         <div className="row gaper align-items-start">
           <div className="col-12 col-lg-6">
-            <div className="four-info__content text-center">
-              <h2 className="fw-7 title-anim">
+            <div className="four-info__content">
+              <h2 className="fw-7 title-anim text-center">
                 Sonic Resonance
               </h2>
-              <p>
+              <p className="text-start">
                 At Artint Studios, we specialize in creating original soundtracks, cinematic scores, and sonic branding that resonate deeply with your audience. Our music is designed to elevate every moment, whether it’s an emotional film scene, an exciting game soundtrack, or a brand's unique sonic identity.
               </p>
             </div>
@@ -24,8 +24,8 @@ const Info = () => {
         <div className="row gaper align-items-start justify-content-end">
           <div className="col-12 col-lg-6">
             <div className="four-info__content text-center">
-              <h2 className="title-anim">Passion</h2>
-              <p>
+              <h2 className="title-anim text-center">Passion</h2>
+              <p className="text-start">
                 Born from a passion for storytelling through sound, Artint Studios brings together creative professionals who believe in the power of music to amplify emotion and narrative. We focus on producing high-quality, custom music that enhances your creative vision. Whether it's a lyrical music video, cinematic soundtrack, or non-lyrical composition, our work is tailored to meet the unique needs of each project
               </p>
             </div>
@@ -38,10 +38,10 @@ const Info = () => {
         <div className="row gaper align-items-start">
           <div className="col-12 col-lg-6">  
             <div className="four-info__content text-center">
-              <h2 className="title-anim">
+              <h2 className="title-anim text-center">
                 Experimental
               </h2>
-              <p>
+              <p className="text-start">
                 At Artint Studios, we create more than just music—we create experiences. Our soundtracks have already been featured in a variety of creative ventures, helping brands, filmmakers, and game developers connect with their audiences on a deeper level.
               </p>
             </div>
